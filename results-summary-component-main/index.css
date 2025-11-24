@@ -1,0 +1,147 @@
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:  hsl(0, 0%, 100%);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Hanken Grotesk";
+}
+.section1{
+    background-color: hsl(252, 100%, 67%);
+    border-radius: 15px;
+    max-width: 500px;
+    min-height: 200px;
+    width: 100%;
+    text-align: center;
+     display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+.div1{
+    background-color: hsla(256, 72%, 46%, 1);
+    border-radius: 50%;
+    padding: 20px;
+    /* border-width:thick; */
+    width:100px;
+    
+}
+.p2{
+    color:hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+.p1{
+   color: hsl(221, 100%, 96%);
+   font-weight: 800;
+}
+.section2{
+    display: flex;
+    background-color:  hsl(221, 100%, 96%);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    min-height: 380px;
+}
+button{
+    border-radius: 15px;
+    background-color:  hsl(224, 30%, 27%);
+    padding: 5px;
+    width: 300px;
+    color:white;
+    text-align: center;
+    /* padding-bottom: 2px; */
+ margin-top: 5px;  
+
+}
+
+.p4{
+    color:hsl(0, 100%, 67%);
+}
+.p5{
+    color:hsl(39, 100%, 56%)
+}
+.p6{
+color:hsl(166, 100%, 37%)
+}
+.p7{
+    color:hsl(234, 85%, 45%)
+}
+.div2,.div3,.div4,.div5{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    /* align-items: center; */
+    justify-content: center;
+    /* border:2px solid black; */
+    width:400px;
+    
+}
+.div2{
+    background-color: hsla(0, 100%, 67%, 0.122);
+    border-radius: 15px;
+    
+}
+.div3{
+    background-color: hsla(39, 100%, 56%, 0.186);
+    border-radius: 15px;
+}
+.div4{
+    background-color:hsla(166, 100%, 37%, 0.124) ;
+    border-radius:15px ;
+}
+.div5{
+    background-color: hsla(234, 85%, 45%, 0.129);
+    border-radius: 15px;
+    
+}
+
+@media (max-width:480px) {
+
+  /* Remove top centering and center-justify from main */
+  main{
+    display: flex;
+      flex-direction: column;
+      justify-content: flex-start;   /* TOP */
+      align-items: center;           /* horizontal centre ok */
+    padding:0px;
+    margin: 0%;
+      /* gap: 20px;                     space between sections */
+  }
+
+  /* Section widths */
+  .section1,
+  .section2 {
+      max-width: 100%;
+      /* width: 90%; */
+  }
+
+  /* Circle smaller on mobile */
+  .div1 {
+      width: 80px;
+      height: 100px;
+      padding: 15px;
+  }
+
+  /* Summary rows reduce width */
+  .div2, .div3, .div4, .div5 {
+      width: 90%;
+  }
+
+  /* Button full width */
+  button {
+      width: 50%;
+      justify-content: center;
+      padding-bottom: 5px;
+
+  }
+ .section1{
+    border-radius: 50px;
+ }
+}
+
