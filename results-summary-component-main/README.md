@@ -5,13 +5,7 @@ This project is inspired by a design from Frontend Mentor and focuses on layout,
 
 ---
 
-## 🚀 Live Demo
 
-<!-- Replace this with your live URL once you deploy -->
-[👉 https://result-summary-component-amxq.vercel.app
-](#)
-
----
 
 
 
